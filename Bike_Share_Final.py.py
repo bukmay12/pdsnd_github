@@ -180,7 +180,7 @@ def user_stats(df):
     # TO DO: Display counts of gender
     if 'Gender' in df:
         gender_count = df['Gender'].value_counts()
-        print('\nCounts of Gender:\n', gender_count)
+        print('\nCounts of Gender:\n{}'.format(gender_count))
     else:
         print('\nCounts of Gender cannot be calculated because Gender does not appear in the dataframe\n')
 
